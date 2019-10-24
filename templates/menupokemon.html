@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style>
+        body{
+                background: url("https://wallpaperaccess.com/full/94935.jpg");
+                background-repeat:no-repeat;
+                background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style='color:rgb(238, 241, 206); font-family:Stencil Std, fantasy'>Pokemon Battle Simulator</h1></center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form class = 'row' action='http://localhost:5000/hasil' method='POST'>
+        <div class='container col s1'></div>
+        <div class='container col s4'>
+            <div class='center'>
+                <div class="input-field">
+                    <input type='text' name='contender1' style="color: rgb(238, 241, 306)" >
+                    <label for='contender1'>Ketik Nama Pokemon</label>
+                </div>
+            </div>
+        </div>
+        <div class='container col s2'></div>
+        <div class='container col s4'>
+            <div class='center'>
+                <div class="input-field">
+                    <input type='text' name=contender2 style="color:rgb(238, 241, 206)" >
+                    <label for='contender2'>Ketik Nama Pokemon</label>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <center>
+        <div class='container'>
+        <input class="btn btn-large waves-effect waves-light"
+        type='submit' value='Battle' style="background-color: rgb(238, 241, 206)">
+        </div>
+        </center>
+    </form>
+
+</body>         
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style>
+        body{
+                background: url("https://wallpaperaccess.com/full/41024.jpg");
+                background-repeat:no-repeat;
+                background-size:cover;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class='row'>
+            <!-- <div class='container col s2'></div> -->
+            <div class='container col s3'>
+                <img src = {{ img1 }} height=150 width=150>
+            </div>
+            <div class='container col s2'>
+                <h1 style="color:white">{{ p1 }}</h1>
+            </div>
+            <div class='container col s2'>
+                <h1 style="color:white">VS</h1>
+            </div>
+            <div class='container col s2'>
+                <h1 style="color:white">{{ p2 }}</h1>
+            </div>
+            <div class='container col s2'>
+                <img src = {{ img2 }} height=150 width=150>
+            </div>
+    </div>
+    <div class='row'>
+        <img src="static/images/pokemon{{ r }}.png">
+    </div>  
+    <form action='http://localhost:5000'>
+    <br><br>
+    <h1 style='color: white'>{{ winner }}</h1>
+    <br><br><br>
+    <div class='row'>
+        <input class="white btn btn-large waves-effect waves-light"
+        type='submit' value='Kembali'>
+    </div>
+
+    </center>
+    </form>
+</body>         
+</html>
